@@ -1,5 +1,5 @@
 # FrontEndTrends
-built using Mongo, Express, Node, and Angular. An aggregator of the latest and greatest frontend technologies. Presented as a full featured application boilerplate.
+Built using Mongo, Express, Node, and Angular. An aggregator of the latest and greatest frontend technologies. Presented as a full featured application boilerplate.
 
 Mongo/Mongoose - DB
 Express - Backend Framework
