@@ -1,0 +1,884 @@
+{
+    "allconfig": {
+        "card.inserted": {
+            "value": "Not Inserted",
+            "type": "enum",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "card.cisproc": {
+            "value": "Processed",
+            "type": "string",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "card.mfgid": {
+            "value": "",
+            "type": "string",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "card.cardid": {
+            "value": "",
+            "type": "string",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "card.fncode": {
+            "value": "000c",
+            "type": "string",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "card.idtext1": {
+            "value": "",
+            "type": "string",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "card.idtext2": {
+            "value": "",
+            "type": "string",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "card.idtext3": {
+            "value": "",
+            "type": "string",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "card.idtext4": {
+            "value": "",
+            "type": "string",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "card.fcrbase": {
+            "value": "Not Detected",
+            "type": "string",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "card.fcrlist": {
+            "value": "NONE DETECTED",
+            "type": "string",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "card.defcfg": {
+            "value": "Not Detected",
+            "type": "string",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "card.cor": {
+            "value": "Not Present",
+            "type": "string",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "card.mac_addr": {
+            "value": "00:00:00:00:00:00",
+            "type": "string",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "card.mac_raw": {
+            "value": "000000000000",
+            "type": "string",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "card.enable": {
+            "value": "on",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "comm.baud": {
+            "value": "9600",
+            "type": "enum",
+            "range": "2400",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "comm.data_bits": {
+            "value": "8",
+            "type": "enum",
+            "range": "7,8",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "comm.parity": {
+            "value": "null",
+            "type": "enum",
+            "range": "null,odd,even,n,o,e",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "comm.stop_bits": {
+            "value": "1",
+            "type": "enum",
+            "range": "1,2",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "comm.dsr": {
+            "value": "on",
+            "type": "enum",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "RW"
+        },
+            "comm.handshake": {
+            "value": "xon\/xoff",
+            "type": "enum",
+            "range": "xon/xoff,rts/cts,dsr/dtr",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "comm.halt": {
+            "value": "no",
+            "type": "bool",
+            "range": "yes,no",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "head.latch": {
+            "value": "ok",
+            "type": "enum",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "ip.dhcp.enable": {
+            "value": "on",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.dhcp.cid_type": {
+            "value": "1",
+            "type": "enum",
+            "range": "0,1,2",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.dhcp.cid_prefix": {
+            "value": "",
+            "type": "string",
+            "range": "",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.dhcp.cid_value": {
+            "value": "000000000000",
+            "type": "string",
+            "range": "",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.dhcp.requests_per_session": {
+            "value": "2",
+            "type": "integer",
+            "range": "1-10",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.dhcp.request_timeout": {
+            "value": "2",
+            "type": "integer",
+            "range": "2-30",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.dhcp.session_interval": {
+            "value": "10",
+            "type": "integer",
+            "range": "0-60",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.dhcp.lease.length": {
+            "value": "0",
+            "type": "double",
+            "range": "0.0-4294967295.0",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "ip.dhcp.lease.time_left": {
+            "value": "0",
+            "type": "integer",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "ip.dhcp.lease.server": {
+            "value": "0.0.0.0",
+            "type": "ipv4-address",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "ip.dhcp.lease.last_attempt": {
+            "value": "0",
+            "type": "double",
+            "range": "0.0-4294967295.0",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "ip.dhcp.cache_ip": {
+            "value": "off",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.dhcp.vendor_class_id": {
+            "value": "",
+            "type": "string",
+            "range": "0-32",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.dhcp.user_class_id": {
+            "value": "",
+            "type": "string",
+            "range": "0-32",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.dhcp.option12": {
+            "value": "on",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.dhcp.option12_format": {
+            "value": "",
+            "type": "string",
+            "range": "0-100",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.dhcp.option12_value": {
+            "value": "JTM004612",
+            "type": "string",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "ip.dhcp.cid_enable": {
+            "value": "off",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.dhcp.cid_suffix": {
+            "value": "000000000000",
+            "type": "string",
+            "range": "",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.dhcp.cid_all": {
+            "value": "000000000000",
+            "type": "string",
+            "range": "",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.dhcp.arp_verify": {
+            "value": "on",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.ftp.enable": {
+            "value": "on",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.ftp.execute_file": {
+            "value": "on",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.ftp.request_password": {
+            "value": "no",
+            "type": "bool",
+            "range": "yes,no",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.lpd.enable": {
+            "value": "on",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.tcp.enable": {
+            "value": "on",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.udp.enable": {
+            "value": "on",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.http.enable": {
+            "value": "on",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.http.admin_name": {
+            "value": "admin",
+            "type": "string",
+            "range": "0-25",
+            "clone": false,
+            "archive": false,
+            "access": "RW"
+        },
+            "ip.http.admin_password": {
+            "value": "",
+            "type": "string",
+            "range": "0-25",
+            "clone": false,
+            "archive": false,
+            "access": "W"
+        },
+            "ip.http.port": {
+            "value": "80",
+            "type": "integer",
+            "range": "0-65535",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.http.faq_url": {
+            "value": "http:\/\/support.frontendtrends.com",
+            "type": "string",
+            "range": "0-64",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.http.custom_link_name": {
+            "value": "",
+            "type": "string",
+            "range": "0-25",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.http.custom_link_url": {
+            "value": "",
+            "type": "string",
+            "range": "0-64",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.smtp.enable": {
+            "value": "on",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.smtp.server_addr": {
+            "value": "0.0.0.0",
+            "type": "string",
+            "range": "0-39",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.smtp.domain": {
+            "value": "ZBRPrintServer.com",
+            "type": "string",
+            "range": "1-24",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.pop3.enable": {
+            "value": "on",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.pop3.print_headers": {
+            "value": "off",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.pop3.verbose_headers": {
+            "value": "off",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.pop3.print_body": {
+            "value": "off",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.pop3.save_attachments": {
+            "value": "off",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.pop3.poll": {
+            "value": "240",
+            "type": "integer",
+            "range": "0-65535",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.pop3.username": {
+            "value": "",
+            "type": "string",
+            "range": "0-64",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.pop3.password": {
+            "value": "",
+            "type": "string",
+            "range": "0-21",
+            "clone": false,
+            "archive": false,
+            "access": "W"
+        },
+            "ip.pop3.server_addr": {
+            "value": "0.0.0.0",
+            "type": "string",
+            "range": "0-39",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.pop3.print_attachments": {
+            "value": "off",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.snmp.enable": {
+            "value": "on",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.snmp.get_community_name": {
+            "value": "",
+            "type": "string",
+            "range": "0-20",
+            "clone": true,
+            "archive": true,
+            "access": "W"
+        },
+            "ip.snmp.set_community_name": {
+            "value": "",
+            "type": "string",
+            "range": "0-20",
+            "clone": true,
+            "archive": true,
+            "access": "W"
+        },
+            "ip.snmp.create_mib": {
+            "value": "",
+            "type": "string",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "W"
+        },
+            "ip.snmp.trap_community_name": {
+            "value": "public",
+            "type": "string",
+            "range": "0-20",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.telnet.enable": {
+            "value": "on",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.telnet.disconnect": {
+            "value": "",
+            "type": "string",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "W"
+        },
+            "ip.addr": {
+            "value": "0.0.0.0",
+            "type": "ipv4-address",
+            "range": "",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.netmask": {
+            "value": "255.255.255.0",
+            "type": "ipv4-address",
+            "range": "",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.gateway": {
+            "value": "0.0.0.0",
+            "type": "ipv4-address",
+            "range": "",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.port": {
+            "value": "6101",
+            "type": "integer",
+            "range": "0-65535",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.remote": {
+            "value": "",
+            "type": "string",
+            "range": "0-40",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.ping_remote": {
+            "value": "",
+            "type": "integer",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "W"
+        },
+            "ip.netstat": {
+            "value": "Active Internet connections\r\nProto Recv-Q Send-Q  Local Address          Foreign Address        State\r\ntcp        0      0  10.3.4.168.9100        10.3.5.48.63135        ESTABLISHED\r\ntcp        0      0  10.3.4.168.9100        10.3.4.51.2651         FIN_WAIT_2\r\ntcp        0      0  *.515                  *.*                    LISTEN\r\ntcp        0      0  *.80                   *.*                    LISTEN\r\ntcp        0      0  *.9200                 *.*                    LISTEN\r\ntcp        0      0  *.9100                 *.*                    LISTEN\r\ntcp        0      0  *.6101                 *.*                    LISTEN\r\ntcp        0      0  *.2323                 *.*                    LISTEN\r\ntcp        0      0  *.23                   *.*                    LISTEN\r\ntcp        0      0  *.21                   *.*                    LISTEN\r\nudp        0      0  *.*                    *.*                   \r\nudp        0      0  *.65534                *.*                   \r\nudp        0      0  *.161                  *.*                   \r\nudp        0      0  *.137                  *.*                   \r\nudp        0      0  *.4201                 *.*                   \r\nudp        0      0  *.*                    *.*                   \r\nudp      324      0  *.68                   *.*                   \r\nudp        0      0  *.6101                 *.*                   \r\n\r\n",
+            "type": "string",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "ip.remote_port": {
+            "value": "10013",
+            "type": "integer",
+            "range": "0-65535",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.remote_autoconnect": {
+            "value": "off",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.bootp.enable": {
+            "value": "on",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.mirror.auto": {
+            "value": "off",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.mirror.username": {
+            "value": "user",
+            "type": "string",
+            "range": "0-20",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.mirror.password": {
+            "value": "",
+            "type": "string",
+            "range": "0-20",
+            "clone": false,
+            "archive": false,
+            "access": "W"
+        },
+            "ip.mirror.server": {
+            "value": "127.0.0.1",
+            "type": "string",
+            "range": "0-41",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.mirror.path": {
+            "value": "frontendtrends",
+            "type": "string",
+            "range": "0-51",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.mirror.freq": {
+            "value": "0",
+            "type": "integer",
+            "range": "0-65535",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.mirror.fetch": {
+            "value": "",
+            "type": "string",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "W"
+        },
+            "ip.mirror.version": {
+            "value": "Oct 10 2012 10:18:27",
+            "type": "string",
+            "range": "",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "ip.mirror.freq_hours": {
+            "value": "0",
+            "type": "integer",
+            "range": "0-100",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.mirror.error_retry": {
+            "value": "0",
+            "type": "integer",
+            "range": "0-65535",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.mirror.feedback.auto": {
+            "value": "off",
+            "type": "bool",
+            "range": "on,off",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.mirror.feedback.path": {
+            "value": "frontendtrends\/feedback",
+            "type": "string",
+            "range": "0-51",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.mirror.feedback.freq": {
+            "value": "0",
+            "type": "integer",
+            "range": "0-65535",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.mirror.feedback.odometer": {
+            "value": "0",
+            "type": "integer",
+            "range": "0-4294967295",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "ip.mirror.success": {
+            "value": "no",
+            "type": "bool",
+            "range": "yes,no",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "ip.mirror.success_time": {
+            "value": "May 14 1981 07:32:25",
+            "type": "string",
+            "range": "0-64",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "ip.mirror.last_time": {
+            "value": "May 14 1981 07:32:25",
+            "type": "string",
+            "range": "0-64",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "ip.mirror.last_error": {
+            "value": "No Error",
+            "type": "string",
+            "range": "0-128",
+            "clone": false,
+            "archive": false,
+            "access": "R"
+        },
+            "ip.mirror.mode": {
+            "value": "ftp",
+            "type": "enum",
+            "range": "ftp,sftp",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.mirror.reset_delay": {
+            "value": "5",
+            "type": "integer",
+            "range": "0-900",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.mirror.interface": {
+            "value": "both",
+            "type": "enum",
+            "range": "both,wired,wireless",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        },
+            "ip.mirror.appl_path": {
+            "value": "",
+            "type": "string",
+            "range": "0-51",
+            "clone": true,
+            "archive": true,
+            "access": "RW"
+        }
+    }
+}

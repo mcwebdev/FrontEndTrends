@@ -1,0 +1,187 @@
+@font-face
+  font-family: 'Open Sans', sans-serif
+
+
+$baseline: 1.5
+$color-dark: #333
+$color-mid: #999
+$color-light: #ddd
+$font-stack: 'Open Sans', sans-serif
+$transition-duration: 300ms
+$font-color: rgba(95, 111, 129, 0.99)
+$primary-color: #7395ad
+$secondary-color: #92d400
+$off-white: #fefefe
+$offset-color: rgba(230, 212, 75, 0.20)
+$contrast-color: #eeeacf
+$contrast-colorA: rgba(238, 234, 207, 0.40)
+$light-color: rgba(176, 199, 218, 0.99)
+$light-colorA: rgba(176, 199, 218, 0.40)
+$mute-color: #f5f5f5
+$border-color: #e8e8e8
+$border-colorA: rgba(95, 111, 129, 0.6)
+$rounded-borders: 8px
+$darkest: #000
+$lightest: #fbfbfb
+$space1: 10px
+$space2: 25px
+$space3: 50px
+$space4: 75px
+$space5: 100px
+$label-size: 2.5em
+
+body
+  font-family:  $font-stack
+  color: $font-color
+  background-color: $lightest
+
+a
+  text-decoration: none
+
+.pseudo-link
+  color: $light-color
+  cursor: pointer
+  font-size: 16px
+
+.pseudo-link:hover
+  color: $primary-color
+  cursor: pointer
+  font-size: 16px
+
+select, option
+  color: $color-mid
+
+.secondary
+  color: $secondary-color
+  font-weight: bold
+
+.trans
+  opacity: .5
+
+.call-out
+  background-color: $secondary-color
+
+.sp-content.internal-slider li .container.push-down
+  position: relative
+  top: $space5
+
+
+.main-content
+  padding-bottom: 50px
+
+.content-container
+  border-top: 1px solid $border-color
+  padding-bottom: 50px
+  background-color: $off-white
+  margin-bottom: 25px
+  position: relative
+  top: 25px
+  opacity: .95
+
+.demo-loader
+  width: 100%
+  height: 600px
+  background-color: $contrast-color
+
+#footer
+  background-color: $contrast-colorA
+
+i
+  color: $primary-color
+
+.font-awesome-icons i
+  font-size: 2em
+  line-height: 1.7em
+  margin: 15px
+  height: 48px
+  width: 48px
+  text-align: center
+
+.fa-2
+  font-size: 2em
+
+.fa-3
+  font-size: 4em
+
+.fa-4
+  font-size: 7em
+
+.fa-5
+  font-size: 12em
+
+.fa-6
+  font-size: 20em
+
+.tag-line
+  margin-top: $space2
+  border: 10px solid $border-colorA
+  opacity: .95
+  padding: 25px
+  line-height: 2em
+
+
+.sp-content.internal-slider li .container
+  position: relative
+  top: 20px
+
+input.sp-selector-1:checked ~ .sp-content 
+  background-position: 0 0
+  background-color: $light-colorA
+
+
+input.sp-selector-2:checked ~ .sp-content 
+  background-position: -100px 0
+  background: url(../images/slider/grid.png) repeat scroll 0 0
+  background-color: $border-colorA
+
+
+input.sp-selector-3:checked ~ .sp-content 
+  background-position: -200px 0
+  background-color: rgba(132, 163, 104, 0.6)
+
+
+input.sp-selector-4:checked ~ .sp-content 
+  background-position: -300px 0
+  background-color: rgba(224, 177, 120, 0.6)
+
+
+input.sp-selector-5:checked ~ .sp-content 
+  background-position: -400px 0
+  background-color: rgba(224, 187, 142, 0.6)
+
+.sp-slideshow.dom-slideshow
+  height: 650px
+
+.sp-slideshow.dom-slideshow .sp-slider > li
+  color: $font-color
+
+.sp-slideshow.dom-slideshow .sp-arrow
+  background: url(../images/slider/arrows-black.png) no-repeat
+
+#home-slideshow .sp-slider p
+  text-shadow: 0 2px 2px #000
+
+input.sp-selector-1:checked ~ .sp-content.internal-slider
+  background-position: 0 0
+  background-color: rgba(255, 255, 255, 0.99)
+
+
+input.sp-selector-2:checked ~ .sp-content.internal-slider
+  background-position: -100px 0
+  background: none
+  background-color: rgba(255, 255, 255, 0.99)
+
+
+input.sp-selector-3:checked ~ .sp-content.internal-slider
+  background-position: -200px 0
+  background-color: rgba(255, 255, 255, 0.99)
+
+
+input.sp-selector-4:checked ~ .sp-content.internal-slider
+  background-position: -300px 0
+  background-color: rgba(255, 255, 255, 0.99)
+
+
+input.sp-selector-5:checked ~ .sp-content.internal-slider
+  background-position: -400px 0
+  background-color: rgba(255, 255, 255, 0.99)

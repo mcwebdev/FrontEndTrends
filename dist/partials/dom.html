@@ -1,0 +1,527 @@
+<div class="sp-slideshow dom-slideshow">
+
+<input id="button-1" type="radio" name="radio-set" class="sp-selector-1 spnav input-nav" checked="checked">
+<label for="button-1" class="button-label-1"></label>
+
+<input id="button-2" type="radio" name="radio-set" class="sp-selector-2 spnav input-nav">
+<label for="button-2" class="button-label-2"></label>
+
+<input id="button-3" type="radio" name="radio-set" class="sp-selector-3 spnav input-nav">
+<label for="button-3" class="button-label-3"></label>
+
+<input id="button-4" type="radio" name="radio-set" class="sp-selector-4 spnav input-nav">
+<label for="button-4" class="button-label-4"></label>
+
+<input id="button-5" type="radio" name="radio-set" class="sp-selector-5 spnav input-nav">
+<label for="button-5" class="button-label-5"></label>
+
+<label for="button-1" class="sp-arrow sp-a1"></label>
+<label for="button-2" class="sp-arrow sp-a2"></label>
+<label for="button-3" class="sp-arrow sp-a3"></label>
+<label for="button-4" class="sp-arrow sp-a4"></label>
+<label for="button-5" class="sp-arrow sp-a5"></label>
+
+<div class="sp-content internal-slider">
+<div class="sp-parallax-bg"></div>
+<ul class="sp-slider clearfix">
+<li>
+    <div class="container push-down">
+        <form id="theForm" class="simform" autocomplete="off">
+            <div class="simform-inner">
+                <ol class="questions">
+                    <li>
+                        <span><label for="q1">What is your favorite movie?</label></span>
+                        <input id="q1" name="q1" type="text">
+                    </li>
+                    <li>
+                        <span><label for="q2">Where do you live?</label></span>
+                        <input id="q2" name="q2" type="text">
+                    </li>
+                    <li>
+                        <span><label for="q3">What time do you go to work?</label></span>
+                        <input id="q3" name="q3" type="text">
+                    </li>
+                    <li>
+                        <span><label for="q4">How do you like your veggies?</label></span>
+                        <input id="q4" name="q4" type="text">
+                    </li>
+                    <li>
+                        <span><label for="q5">What book inspires you?</label></span>
+                        <input id="q5" name="q5" type="text">
+                    </li>
+                    <li>
+                        <span><label for="q6">What is your profession?</label></span>
+                        <input id="q6" name="q6" type="text">
+                    </li>
+                </ol>
+                <!-- /questions -->
+                <button class="submit" type="submit">Send answers</button>
+                <div class="controls">
+                    <button class="next"></button>
+                    <div class="progress"></div>
+                <span class="number">
+								<span class="number-current"></span>
+                <span class="number-total"></span>
+                </span>
+                    <span class="error-message"></span>
+                </div>
+                <!-- / controls -->
+            </div>
+            <!-- /simform-inner -->
+            <span class="final-message"></span>
+        </form>
+    </div>
+    <!-- /simform -->
+</li>
+<li>
+    <div class="container push-down">
+        <h2>Angular 2 Way Binding and jQueryUI </h2>
+        <form class="placeholdem">
+            <label class="fade">
+                <input name="field1" placeholder="Triggered on Focus/Blur">
+
+                <div class="arrow"></div>
+            </label>
+            <label class="fade">
+                <textarea name="field2" placehold="Inputs or Textareas" ng-model="msg"></textarea>
+                <div class="arrow"></div>
+            </label>
+        </form>
+        <div class="ng-binder">{{msg}}</div>
+    </div>
+</li>
+<li class="visible-lg">
+<div class="container wizard">
+<h2>Wizard </h2><div id="wizard" class="swMain">
+<ul>
+    <li>
+        <a href="#step-1" class="step">
+            <label class="stepNumber">|</label>
+                <span class="stepDesc"> Step 1<br>
+            <small>Select Local Port</small> </span>
+        </a>
+    </li>
+    <li>
+        <a href="#step-2" class="step">
+            <label class="stepNumber">|</label>
+                <span class="stepDesc"> Step 2<br>
+            <small>Connectivity Option</small> </span>
+        </a>
+    </li>
+    <li>
+        <a href="#step-3" class="step">
+            <label class="stepNumber">|</label>
+                <span class="stepDesc"> Step 3<br>
+            <small>Connectivity Option</small> </span>
+        </a>
+    </li>
+    <li>
+        <a href="#step-4" class="step">
+            <label class="stepNumber">|</label>
+                <span class="stepDesc"> Step 4<br>
+            <small>IP Address Settings</small> </span>
+        </a>
+    </li>
+    <li>
+        <a href="#step-5" class="step">
+            <label class="stepNumber">|</label>
+                <span class="stepDesc"> Step 5<br>
+            <small>Configuration Settings</small> </span>
+        </a>
+    </li>
+    <li>
+        <a href="#step-6" class="step">
+            <label class="stepNumber">|</label>
+                <span class="stepDesc"> Step 6<br>
+            <small>Review and Finish</small> </span>
+        </a>
+    </li>
+</ul>
+<div id="step-1">
+    <h2 class="StepTitle">Please enter your wireless settings below. </h2>
+    <div class="alert alert-info">
+        <button data-dismiss="alert" class="close" type="button">×</button>
+        All security options may not be available in your printer. Please refer to the Wireless Print Server and Wireless Plus Print Server User Guide for supported security protocols.</div>
+    <ul class="nav nav-tabs" id="myTab">
+        <li class="active"><a href="#gen">General Security</a>
+        </li>
+        <li><a href="#ker">Kerberos Settings</a>
+        </li>
+        <li><a href="#wep">WEP OPtions</a>
+        </li>
+        <li><a href="#wpa">WPA</a>
+        </li>
+        <li><a href="#eap">EAP</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="gen">
+            <div class="input-prepend input-append"> <span class="add-on">ESSID:</span>
+                <input class="span3" type="text">
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">Security Mode:</span>
+                <select>
+                    <option>None</option>
+                    <option>Wep 40-Bit</option>
+                    <option>Wep 128-Bit</option>
+                    <option>EAP-TLS</option>
+                    <option>EAP-TTLS</option>
+                </select>
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">Security Username:</span>
+                <input class="span3" type="text">
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">Security Password:</span>
+                <input class="span3" type="text">
+            </div>
+        </div>
+        <div class="tab-pane" id="ker">
+            <div class="input-prepend input-append"> <span class="add-on">Kerberos User:</span>
+                <input class="span3" type="text">
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">Kerberos Password:</span>
+                <input class="span3" type="text">
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">Kerberos Realm:</span>
+                <input class="span3" type="text">
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">Kerberos KDC:</span>
+                <input class="span3" type="text">
+            </div>
+        </div>
+        <div class="tab-pane" id="wep">
+            <div class="input-prepend input-append"> <span class="add-on">Authentification Type:</span>
+                <select>
+                    <option>Open</option>
+                </select>
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">WEP Index:</span>
+                <select>
+                    <option>1</option>
+                </select>
+            </div>
+            <div class="input-prepend input-append form-inline"> <span class="add-on">Encr. Key Storage 1:</span>
+                <label class="radio spacer">
+                    <input name="optionsRadios" type="radio" id="optionsRadios2" value="option1" checked="checked">Hex</label>
+                <label class="radio spacer">
+                    <input name="optionsRadios" type="radio" id="optionsRadios2" value="option1" checked="checked">String</label>
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">WEP Key 1:</span>
+                <input class="span3" type="text">
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">WEP Key 2:</span>
+                <input class="span3" type="text">
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">WEP Key 3:</span>
+                <input class="span3" type="text">
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">WEP Key 4:</span>
+                <input class="span3" type="text">
+            </div>
+        </div>
+        <div class="tab-pane" id="wpa">
+            <div class="input-prepend input-append form-inline"> <span class="add-on">PSK Type:</span>
+                <label class="radio spacer">
+                    <input name="optionsRadios" type="radio" id="optionsRadios2" value="option1" checked="checked">Hex</label>
+                <label class="radio spacer">
+                    <input name="optionsRadios" type="radio" id="optionsRadios2" value="option1" checked="checked">String</label>
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">PSK Name:</span>
+                <input class="span3" type="text">
+            </div>
+        </div>
+        <div class="tab-pane" id="eap">
+            <div class="input-prepend input-append"> <span class="add-on">Optional Private Key:</span>
+                <input class="span3" type="text">
+            </div>
+        </div>
+    </div>
+    <div class="btn-group">
+        <button class="btn">Certificates</button>
+        <button class="btn">Advanced Options</button>
+        <button class="btn">Restore Defaults</button>
+    </div>
+</div>
+<div id="step-2">
+    <h2 class="StepTitle">Select the type of Connectivity Option you are setting up</h2>
+    <label class="radio">
+        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="checked">Wired</label>
+    <label class="radio">
+        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Wireless</label>
+    <label class="radio">
+        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="checked">Bluetooth</label>
+</div>
+<div id="step-3">
+    <h2 class="StepTitle">Select the type of printer you are using</h2>
+    <label class="radio">
+        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Tabletop/Desktop</label>
+    <label class="radio">
+        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="checked">Mobile</label>
+</div>
+<div id="step-4">
+    <h2 class="StepTitle">Select how you want the print server to obtain an IP address.</h2>
+    <h4>IP Settings</h4>
+    <p>How do you want the print server to optain an IP address?</p>
+    <label class="radio">
+        <input name="optionsRadios" type="radio" id="optionsRadios2" value="option1" checked="checked">DHCP</label>
+    <label class="radio">
+        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option2">Static</label>
+    <div class="input-prepend input-append"> <span class="add-on">IP Address</span>
+        <input class="span3" type="text">
+    </div>
+    <div class="input-prepend input-append"> <span class="add-on">Subnet Mask</span>
+        <input class="span3" type="text">
+    </div>
+    <div class="input-prepend input-append"> <span class="add-on">Default Gateway</span>
+        <input class="span3" type="text">
+    </div>
+    <h4>Client ID Settings</h4>
+    Enabled:
+    <select>
+        <option>OFF</option>
+        <option>ON</option>
+    </select>
+    Type:
+    <select>
+        <option>MAC ADDRESS</option>
+        <option>USER-DEFINED ASCII</option>
+        <option>USER-DEFINED HEX</option>
+    </select>
+    <div class="input-prepend input-append"> <span class="add-on">Prefix</span>
+        <input class="span6" type="text">
+    </div>
+    <div class="input-prepend input-append"> <span class="add-on">Suffix</span>
+        <input class="span6" type="text">
+    </div>
+</div>
+<div id="step-5">
+    <h2 class="StepTitle">Please enter your wireless settings below. </h2>
+    <div class="alert alert-info">
+        <button data-dismiss="alert" class="close" type="button">×</button>
+        All security options may not be available in your printer. Please refer to the Wireless Print Server and Wireless Plus Print Server User Guide for supported security protocols.</div>
+    <ul class="nav nav-tabs" id="myTab">
+        <li class="active"><a href="#gen">General Security</a>
+        </li>
+        <li><a href="#ker">Kerberos Settings</a>
+        </li>
+        <li><a href="#wep">WEP OPtions</a>
+        </li>
+        <li><a href="#wpa">WPA</a>
+        </li>
+        <li><a href="#eap">EAP</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="gen">
+            <div class="input-prepend input-append"> <span class="add-on">ESSID:</span>
+                <input class="span3" type="text">
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">Security Mode:</span>
+                <select>
+                    <option>None</option>
+                    <option>Wep 40-Bit</option>
+                    <option>Wep 128-Bit</option>
+                    <option>EAP-TLS</option>
+                    <option>EAP-TTLS</option>
+                </select>
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">Security Username:</span>
+                <input class="span3" type="text">
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">Security Password:</span>
+                <input class="span3" type="text">
+            </div>
+        </div>
+        <div class="tab-pane" id="ker">
+            <div class="input-prepend input-append"> <span class="add-on">Kerberos User:</span>
+                <input class="span3" type="text">
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">Kerberos Password:</span>
+                <input class="span3" type="text">
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">Kerberos Realm:</span>
+                <input class="span3" type="text">
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">Kerberos KDC:</span>
+                <input class="span3" type="text">
+            </div>
+        </div>
+        <div class="tab-pane" id="wep">
+            <div class="input-prepend input-append"> <span class="add-on">Authentification Type:</span>
+                <select>
+                    <option>Open</option>
+                </select>
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">WEP Index:</span>
+                <select>
+                    <option>1</option>
+                </select>
+            </div>
+            <div class="input-prepend input-append form-inline"> <span class="add-on">Encr. Key Storage 1:</span>
+                <label class="radio spacer">
+                    <input name="optionsRadios" type="radio" id="optionsRadios2" value="option1" checked="checked">Hex</label>
+                <label class="radio spacer">
+                    <input name="optionsRadios" type="radio" id="optionsRadios2" value="option1" checked="checked">String</label>
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">WEP Key 1:</span>
+                <input class="span3" type="text">
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">WEP Key 2:</span>
+                <input class="span3" type="text">
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">WEP Key 3:</span>
+                <input class="span3" type="text">
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">WEP Key 4:</span>
+                <input class="span3" type="text">
+            </div>
+        </div>
+        <div class="tab-pane" id="wpa">
+            <div class="input-prepend input-append form-inline"> <span class="add-on">PSK Type:</span>
+                <label class="radio spacer">
+                    <input name="optionsRadios" type="radio" id="optionsRadios2" value="option1" checked="checked">Hex</label>
+                <label class="radio spacer">
+                    <input name="optionsRadios" type="radio" id="optionsRadios2" value="option1" checked="checked">String</label>
+            </div>
+            <div class="input-prepend input-append"> <span class="add-on">PSK Name:</span>
+                <input class="span3" type="text">
+            </div>
+        </div>
+        <div class="tab-pane" id="eap">
+            <div class="input-prepend input-append"> <span class="add-on">Optional Private Key:</span>
+                <input class="span3" type="text">
+            </div>
+        </div>
+    </div>
+    <div class="btn-group">
+        <button class="btn">Certificates</button>
+        <button class="btn">Advanced Options</button>
+        <button class="btn">Restore Defaults</button>
+    </div>
+</div>
+<div id="step-6">
+    <h2 class="StepTitle">Please review the Script below and click Finish to send the data to printer.</h2>
+            <pre class="prettyprint linenums">^XA
+^WIA
+^NC2
+^NPP
+^KC0,1,,
+^WAD,D
+^WEOFF,1,O,H,,,,
+^WP0,0
+^WR,,,,100
+^WS125,I,L,,,
+^NBS
+^WLOFF,,
+^WKOFF,,,,
+^WX01,
+^XZ
+^XA
+^JUS
+^XZ
+! U1 setvar "wlan.allowed_band" "2.4"
+! U1 setvar "wlan.ip.protocol" "all"
+</pre>
+</div>
+</div>
+</div>
+</li>
+<!--<li>4</li>
+<li>5</li>-->
+</ul>
+</div>
+<!-- sp-content -->
+
+</div>
+<!-- sp-slideshow -->
+
+
+<!--<div class="container content-container well">
+    <div class="row">
+        <div class="col-lg-12 col-md-offset-1">
+...
+        </div>
+    </div>
+</div>-->
+
+<link rel="stylesheet" href="bower_components/random/placeholdem.css">
+<link rel="stylesheet" href="bower_components/random/minimal-form.css">
+
+
+
+<script src="bower_components/random/modernizr.custom.js"></script>
+<script src="bower_components/random/placeholdem.min.js"></script>
+<script src="bower_components/random/classie.js"></script>
+<script src="bower_components/random/jquery.wizard.js"></script>
+<script src="bower_components/random/stepsForm.js"></script>
+<script src="bower_components/random/front-end-tab.js"></script>
+<script src="bower_components/random/front-end-alert.js"></script>
+<script>
+    Placeholdem( document.querySelectorAll( '[placeholder]' ) );
+
+    var fadeElems = document.body.querySelectorAll( '.fade' ),
+            fadeElemsLength = fadeElems.length,
+            i = 0,
+            interval = 50;
+
+    function incFade() {
+        if( i < fadeElemsLength ) {
+            fadeElems[ i ].className += ' fade-load';
+            i++;
+            setTimeout( incFade, interval );
+        }
+    }
+
+    setTimeout( incFade, interval );
+
+
+
+
+    var theForm = document.getElementById( 'theForm' );
+
+    new stepsForm( theForm, {
+        onSubmit : function( form ) {
+            // hide form
+            classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+
+
+
+
+
+            // let's just simulate something...
+            var messageEl = theForm.querySelector( '.final-message' );
+            messageEl.innerHTML = 'Thank you! We\'ll be in touch.';
+            classie.addClass( messageEl, 'show' );
+        }
+    } );
+
+
+
+    $(document).ready(function () {
+
+        $('#myTab a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+            $('#myTab a').css("backround" , "#fff");
+        })
+        $('#myTab a').click(function (e) {
+            e.preventDefault();
+            $('#myTab a').css("backround" , "#fff");
+        })
+        $(function () {
+            $('#myTab a:first').tab('show');
+        })
+        $('a[data-toggle="tab"]').on('shown', function (e) {
+            e.target // activated tab
+            e.relatedTarget // previous tab
+        })
+
+        // Smart Wizard
+        $('#wizard').smartWizard();
+
+        function onFinishCallback() {
+            $('#wizard').smartWizard('showMessage', 'Finish Clicked');
+            alert(this)
+        }
+    });
+</script>

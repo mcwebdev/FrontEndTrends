@@ -1,0 +1,133 @@
+<!doctype html>
+<html ng-app="frontendtrendsApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>FrontEndTrends MeanStack</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="styles/dacbd222.main.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:800italic,400,700,800,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles/theme1.css" id="theme">
+    <script src="scripts/classie.js"></script>
+    <script src="scripts/gnmenu.js"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+<div id="wrap">
+    <div id="push">
+        <!-- for menu height & sticky footer -->
+    </div>
+    <header>
+        <ul id="gn-menu" class="gn-menu-main">
+            <li class="gn-trigger">
+                    <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+                    <nav class="gn-menu-wrapper">
+                        <div class="gn-scroller">
+                            <ul class="gn-menu">
+                                <!--<li class="gn-search-item">
+                                <input placeholder="Search" type="search" class="gn-search">
+                                <a class="gn-icon gn-icon-search"><span>Search</span></a>
+                            </li>-->
+                            <li>
+                                <a class="gn-icon gn-icon-download" href="http://github.com/n2design1" target="_blank">GIT | N2design1</a>
+                            </li>
+                            <!--<li>
+                                <a class="gn-icon gn-icon-archive">Archives</a>
+                                <ul class="gn-submenu">
+                                    <li><a class="gn-icon gn-icon-article">Articles</a>
+                                    </li>
+                                    <li><a class="gn-icon gn-icon-pictures">Images</a>
+                                    </li>
+                                    <li><a class="gn-icon gn-icon-videos">Videos</a>
+                                    </li>
+                                </ul>
+                            </li>-->
+                        </ul>
+                        <p class="note">This site showcases many features for demonstrative purposes.</p>
+                    </div>
+                    <!-- /gn-scroller -->
+                </nav>
+            </li>
+
+            <li><a class="codrops-icon" href="#/" ng-click="active='fet'"><i class="fa fa-home fa-2"></i> </a>
+            </li>
+
+            <li><a class="codrops-icon" href="#/boilerplates" ng-click="active='boilerplates'">Boilerplates</a>
+            </li>
+            <li class="visible-lg"><a class="codrops-icon" href="#/json" ng-click="active='json'">Data Views</a>
+            </li>
+            <li><a class="codrops-icon" href="#/dom" ng-click="active='dom'">DOM Wizardry</a>
+            </li>
+            <li><a class="codrops-icon" href="#/html5" ng-click="active='html5'">HTML5</a>
+            </li>
+            <li><a class="codrops-icon" href="#/trending" ng-click="active='trending'">Trending UX</a>
+            </li>
+            <li class="roller">
+                <span class="not-a-link">Theme Changer</span>
+
+                <i class="fa fa-star theme1" data-theme="styles/theme1.css"></i>
+                <i class="fa fa-star theme2" data-theme="styles/theme2.css"></i>
+                <i class="fa fa-star theme3" data-theme="styles/theme3.css"></i>
+                <i class="fa fa-picture-o theme4 remote-me"></i>
+
+            </li>
+            <li><a class="codrops-icon codrops-icon-drop call-out stack" href="#/stack" ng-click="active='stack'"><span>Technology Stack</span></a>
+            </li>
+        </ul>
+        <script>
+            new gnMenu(document.getElementById('gn-menu'));
+        </script>
+    </header>
+
+    <div class="main-content" ng-view=""></div>
+    <div id="push">
+        <!-- for menu height & sticky footer -->
+    </div>
+    <div id="push">
+        <!-- for menu height & sticky footer -->
+    </div>
+</div>
+<div id="footer">
+    <div class="objective"><p>I am currently consulting, but seeking a full-time remote position.</p></div>
+
+        <div class="pull-right blurb">
+            <!--<img src="images/c43f6f8e.linkedin1.png">-->
+            <p><span class="secondary"> On-site consulting in select <a href="#" class="cities" data-toggle="tooltip" title="" data-original-title="Chicago | NYC | Bay Area">cities</a>.</span></p>
+            <p><span class="contacts"><i class="fa fa-linkedin"> <a href="https://www.linkedin.com/in/mattcharlton">Matt Charlton</a></i>   <i class="fa fa-download">  <a href="demos/Matthew_Charlton_CV.docx">Download Resume</a></i></span></p>
+
+        </div>
+
+</div>
+
+<!-- Libraries -->
+<script src="bower_components/random/pace.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
+<script src="scripts/meny.js"></script>
+<script src="bower_components/shine/dist/shine.min.js"></script>
+
+<script src="scripts/507e7491.modules.js"></script>
+
+<script src="scripts/e5ecf14e.scripts.js"></script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-50379832-1', 'frontendtrends.com');
+    ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>

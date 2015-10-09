@@ -1,0 +1,47 @@
+/* line 4, ../../sass/theme3.sass */
+body{ background-color: yellow;}
+.sp-content.internal-slider li .container {
+    position: relative;
+    top: 20px;
+}
+
+/* line 127, ../../sass/_presentation.sass */
+input.sp-selector-1:checked ~ .sp-content {
+    background-position: 0 0;
+    background-color: #523b76;
+}
+
+/* line 132, ../../sass/_presentation.sass */
+input.sp-selector-2:checked ~ .sp-content {
+    background-position: -100px 0;
+    background: url(../images/slider/grid.png) repeat scroll 0 0;
+    background-color: rgba(95, 111, 129, 0.6);
+}
+
+/* line 138, ../../sass/_presentation.sass */
+input.sp-selector-3:checked ~ .sp-content {
+    background-position: -200px 0;
+    background-color: rgba(132, 163, 104, 0.6);
+}
+
+/* line 143, ../../sass/_presentation.sass */
+input.sp-selector-4:checked ~ .sp-content {
+    background-position: -300px 0;
+    background-color: rgba(224, 177, 120, 0.6);
+}
+
+/* line 148, ../../sass/_presentation.sass */
+input.sp-selector-5:checked ~ .sp-content {
+    background-position: -400px 0;
+    background-color: rgba(224, 187, 142, 0.6);
+}
+
+/* line 152, ../../sass/_presentation.sass */
+.sp-slideshow.dom-slideshow {
+    height: 650px;
+}
+
+/* line 155, ../../sass/_presentation.sass */
+.sp-slideshow.dom-slideshow .sp-slider > li {
+    color: rgba(95, 111, 129, 0.99);
+}

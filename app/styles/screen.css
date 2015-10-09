@@ -1,0 +1,225 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@font-face {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 33, ../../sass/_presentation.sass */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(95, 111, 129, 0.99);
+  background-color: #fbfbfb;
+}
+
+/* line 38, ../../sass/_presentation.sass */
+a {
+  text-decoration: none;
+}
+
+/* line 41, ../../sass/_presentation.sass */
+.pseudo-link {
+  color: rgba(176, 199, 218, 0.99);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* line 46, ../../sass/_presentation.sass */
+.pseudo-link:hover {
+  color: #7395ad;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* line 51, ../../sass/_presentation.sass */
+select, option {
+  color: #999999;
+}
+
+/* line 54, ../../sass/_presentation.sass */
+.secondary {
+  color: #92d400;
+  font-weight: bold;
+}
+
+/* line 58, ../../sass/_presentation.sass */
+.trans {
+  opacity: 0.5;
+}
+
+/* line 61, ../../sass/_presentation.sass */
+.call-out {
+  background-color: #92d400;
+}
+
+/* line 64, ../../sass/_presentation.sass */
+.sp-content.internal-slider li .container.push-down {
+  position: relative;
+  top: 100px;
+}
+
+/* line 69, ../../sass/_presentation.sass */
+.main-content {
+  padding-bottom: 50px;
+}
+
+/* line 72, ../../sass/_presentation.sass */
+.content-container {
+  border-top: 1px solid #e8e8e8;
+  padding-bottom: 50px;
+  background-color: #fefefe;
+  margin-bottom: 25px;
+  position: relative;
+  top: 25px;
+  opacity: 0.95;
+}
+
+/* line 81, ../../sass/_presentation.sass */
+.demo-loader {
+  width: 100%;
+  height: 600px;
+  background-color: #eeeacf;
+}
+
+/* line 86, ../../sass/_presentation.sass */
+#footer {
+  background-color: rgba(238, 234, 207, 0.4);
+}
+
+/* line 89, ../../sass/_presentation.sass */
+i {
+  color: #7395ad;
+}
+
+/* line 92, ../../sass/_presentation.sass */
+.font-awesome-icons i {
+  font-size: 2em;
+  line-height: 1.7em;
+  margin: 15px;
+  height: 48px;
+  width: 48px;
+  text-align: center;
+}
+
+/* line 100, ../../sass/_presentation.sass */
+.fa-2 {
+  font-size: 2em;
+}
+
+/* line 103, ../../sass/_presentation.sass */
+.fa-3 {
+  font-size: 4em;
+}
+
+/* line 106, ../../sass/_presentation.sass */
+.fa-4 {
+  font-size: 7em;
+}
+
+/* line 109, ../../sass/_presentation.sass */
+.fa-5 {
+  font-size: 12em;
+}
+
+/* line 112, ../../sass/_presentation.sass */
+.fa-6 {
+  font-size: 20em;
+}
+
+/* line 115, ../../sass/_presentation.sass */
+.tag-line {
+  margin-top: 25px;
+  border: 10px solid rgba(95, 111, 129, 0.6);
+  opacity: 0.95;
+  padding: 25px;
+  line-height: 2em;
+}
+
+/* line 123, ../../sass/_presentation.sass */
+.sp-content.internal-slider li .container {
+  position: relative;
+  top: 20px;
+}
+
+/* line 127, ../../sass/_presentation.sass */
+input.sp-selector-1:checked ~ .sp-content {
+  background-position: 0 0;
+  background-color: rgba(176, 199, 218, 0.4);
+}
+
+/* line 132, ../../sass/_presentation.sass */
+input.sp-selector-2:checked ~ .sp-content {
+  background-position: -100px 0;
+  background: url(../images/slider/grid.png) repeat scroll 0 0;
+  background-color: rgba(95, 111, 129, 0.6);
+}
+
+/* line 138, ../../sass/_presentation.sass */
+input.sp-selector-3:checked ~ .sp-content {
+  background-position: -200px 0;
+  background-color: rgba(132, 163, 104, 0.6);
+}
+
+/* line 143, ../../sass/_presentation.sass */
+input.sp-selector-4:checked ~ .sp-content {
+  background-position: -300px 0;
+  background-color: rgba(224, 177, 120, 0.6);
+}
+
+/* line 148, ../../sass/_presentation.sass */
+input.sp-selector-5:checked ~ .sp-content {
+  background-position: -400px 0;
+  background-color: rgba(224, 187, 142, 0.6);
+}
+
+/* line 152, ../../sass/_presentation.sass */
+.sp-slideshow.dom-slideshow {
+  height: 650px;
+}
+
+/* line 155, ../../sass/_presentation.sass */
+.sp-slideshow.dom-slideshow .sp-slider > li {
+  color: rgba(95, 111, 129, 0.99);
+}
+
+/* line 158, ../../sass/_presentation.sass */
+.sp-slideshow.dom-slideshow .sp-arrow {
+  background: url(../images/slider/arrows-black.png) no-repeat;
+}
+
+/* line 161, ../../sass/_presentation.sass */
+#home-slideshow .sp-slider p {
+  text-shadow: 0 2px 2px black;
+}
+
+/* line 164, ../../sass/_presentation.sass */
+input.sp-selector-1:checked ~ .sp-content.internal-slider {
+  background-position: 0 0;
+  background-color: rgba(255, 255, 255, 0.99);
+}
+
+/* line 169, ../../sass/_presentation.sass */
+input.sp-selector-2:checked ~ .sp-content.internal-slider {
+  background-position: -100px 0;
+  background: none;
+  background-color: rgba(255, 255, 255, 0.99);
+}
+
+/* line 175, ../../sass/_presentation.sass */
+input.sp-selector-3:checked ~ .sp-content.internal-slider {
+  background-position: -200px 0;
+  background-color: rgba(255, 255, 255, 0.99);
+}
+
+/* line 180, ../../sass/_presentation.sass */
+input.sp-selector-4:checked ~ .sp-content.internal-slider {
+  background-position: -300px 0;
+  background-color: rgba(255, 255, 255, 0.99);
+}
+
+/* line 185, ../../sass/_presentation.sass */
+input.sp-selector-5:checked ~ .sp-content.internal-slider {
+  background-position: -400px 0;
+  background-color: rgba(255, 255, 255, 0.99);
+}

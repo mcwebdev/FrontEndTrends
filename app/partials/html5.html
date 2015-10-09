@@ -1,0 +1,89 @@
+<div class="sp-slideshow dom-slideshow">
+
+<input id="button-1" type="radio" name="radio-set" class="sp-selector-1 spnav input-nav" checked="checked" />
+<label for="button-1" class="button-label-1"></label>
+
+<input id="button-2" type="radio" name="radio-set" class="sp-selector-2 spnav input-nav" />
+<label for="button-2" class="button-label-2"></label>
+
+<input id="button-3" type="radio" name="radio-set" class="sp-selector-3 spnav input-nav" />
+<label for="button-3" class="button-label-3"></label>
+
+<input id="button-4" type="radio" name="radio-set" class="sp-selector-4 spnav input-nav" />
+<label for="button-4" class="button-label-4"></label>
+
+<input id="button-5" type="radio" name="radio-set" class="sp-selector-5 spnav input-nav" />
+<label for="button-5" class="button-label-5"></label>
+
+<label for="button-1" class="sp-arrow sp-a1"></label>
+<label for="button-2" class="sp-arrow sp-a2"></label>
+<label for="button-3" class="sp-arrow sp-a3"></label>
+<label for="button-4" class="sp-arrow sp-a4"></label>
+<label for="button-5" class="sp-arrow sp-a5"></label>
+
+<div class="sp-content internal-slider">
+<div class="sp-parallax-bg"></div>
+<ul class="sp-slider clearfix">
+<li>
+    <div class="container">
+        <h2>HTML5 Video</h2>
+        <video id="my_video_1" class="video-js" controls  preload="auto" poster="images/trans.png"
+                                  data-setup="{}">
+        <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+        <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+    </video></div>
+</li>
+<li class="visible-lg">
+    <div class="container"><iframe class="demo-loader" src="http://www.createjs.com/#!/EaselJS/demos/dragdrop"></iframe></div>
+</li>
+<li>
+    <div class="container">
+        <section id="local">
+        <div class="page-header">
+            <h1>Local Storage</h1>
+        </div>
+        <!-- Smart Local Storage -->
+        <!--<a class="c-link" href='' onclick='javascript:clearLocal();'>Clear local storage</a>-->
+        <div id="scribble-pad">
+            <p id="scribble" contenteditable="true" onKeyUp="storeUserScribble(this.id);"></p>
+        </div>
+        <!-- End Local Storage Content -->
+        <p>&nbsp;</p>
+        </section>
+    </div>
+</li>
+<!--<li><div class="container">html5</div></li>
+<li><div class="container">html5</div></li>-->
+</ul>
+</div>
+<!-- sp-content -->
+
+</div>
+<!-- sp-slideshow -->
+
+
+
+
+        <script>
+            function storeUserScribble(id) {
+                var scribble = document.getElementById('scribble').innerHTML;
+                localStorage.setItem('userScribble',scribble);
+            }
+
+            function getUserScribble() {
+                if ( localStorage.getItem('userScribble')) {
+                    var scribble = localStorage.getItem('userScribble');
+                }
+                else {
+                    var scribble = 'Change this text and refresh the page. Will only work if user uses the same browser and machine. For cross-browser-cross machine we will need to utilize a database.';
+                }
+                document.getElementById('scribble').innerHTML = scribble;
+            }
+
+            function clearLocal() {
+                clear: localStorage.clear();
+                return false;
+            }
+
+            getUserScribble();
+        </script>

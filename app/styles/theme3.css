@@ -1,0 +1,55 @@
+/* line 8, ../../sass/theme3.sass */
+body {
+  color: #838080;
+}
+
+/* line 11, ../../sass/theme3.sass */
+.secondary {
+  color: #c4bebe;
+}
+
+/* line 14, ../../sass/theme3.sass */
+.call-out {
+  background-color: #c4bebe;
+}
+
+/* line 17, ../../sass/theme3.sass */
+input.sp-selector-1:checked ~ .sp-content {
+  background-position: 0 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 22, ../../sass/theme3.sass */
+input.sp-selector-2:checked ~ .sp-content {
+  background-position: -100px 0;
+  background: url(../images/slider/grid.png) repeat scroll 0 0;
+  background-color: rgba(80, 77, 76, 0.6);
+}
+
+/* line 28, ../../sass/theme3.sass */
+input.sp-selector-3:checked ~ .sp-content {
+  background-position: -200px 0;
+  background-color: rgba(163, 159, 158, 0.6);
+}
+
+/* line 33, ../../sass/theme3.sass */
+input.sp-selector-4:checked ~ .sp-content {
+  background-position: -300px 0;
+  background-color: rgba(220, 213, 224, 0.6);
+}
+
+/* line 38, ../../sass/theme3.sass */
+input.sp-selector-5:checked ~ .sp-content {
+  background-position: -400px 0;
+  background-color: rgba(222, 222, 224, 0.6);
+}
+
+/* line 42, ../../sass/theme3.sass */
+#footer {
+  background-color: #707070;
+}
+
+/* line 45, ../../sass/theme3.sass */
+#footer .objective p {
+  color: white;
+}

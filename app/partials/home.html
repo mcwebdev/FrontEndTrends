@@ -1,0 +1,70 @@
+<div id="home-slideshow" class="sp-slideshow">
+
+    <input id="button-1" type="radio" name="radio-set" class="sp-selector-1 input-nav" checked="checked" />
+    <label for="button-1" class="button-label-1"></label>
+
+    <input id="button-2" type="radio" name="radio-set" class="sp-selector-2 input-nav" />
+    <label for="button-2" class="button-label-2"></label>
+
+    <input id="button-3" type="radio" name="radio-set" class="sp-selector-3 input-nav" />
+    <label for="button-3" class="button-label-3"></label>
+
+    <input id="button-4" type="radio" name="radio-set" class="sp-selector-4 input-nav" />
+    <label for="button-4" class="button-label-4"></label>
+
+    <input id="button-5" type="radio" name="radio-set" class="sp-selector-5 input-nav" />
+    <label for="button-5" class="button-label-5"></label>
+
+    <label for="button-1" class="sp-arrow sp-a1"></label>
+    <label for="button-2" class="sp-arrow sp-a2"></label>
+    <label for="button-3" class="sp-arrow sp-a3"></label>
+    <label for="button-4" class="sp-arrow sp-a4"></label>
+    <label for="button-5" class="sp-arrow sp-a5"></label>
+
+    <div class="sp-content">
+        <div class="sp-parallax-bg"></div>
+        <ul class="sp-slider clearfix">
+            <li><h1 class="slogan"><span id="shine">front.End Trends</span></h1><p>Developing advanced frontends for portable, scalable websites and applications</p> </li>
+            <li><h1 class="slogan">Responsive Interaction</h1><p>No more page refreshing every time the user has an interaction</p></li>
+            <li><!--<div class="ringer"></div>
+                <div class="ringer"></div>
+                <div class="ringer"></div>
+                <div class="ringer"></div>
+                <div class="ringer"></div>
+                <div class="ringer"></div>
+                <div class="ringer"></div>
+                <div class="ringer"></div>
+                <div class="ringer"></div>
+                <div class="ringer"></div>
+                <div class="ringer"></div>-->
+                <h1 class="slogan mean-stack">MEAN STACK SPA</h1>
+                <p>.call(this) an example single.page.application written with ['mongo', 'express', 'angular', 'node'] aka = theMeanStack</p></li>
+            <li><h1 class="slogan slogan-wrap">Developer<span class="secondary">/</span>Designer Hybrid</h1>
+                <p>I started off in UX/UI design, and evolved over time into a front end developer. Now I spend my spare time learning end to end applications in javascript </p></li>
+            <li><div id="gif"></div><h1 class="slogan">Past Clients</h1>
+                <div class="past-clients">
+                    <div class="thumb"><img src="images/past-clients/Deloitte-Logo.jpg"></div>
+                    <div class="thumb"><img src="images/past-clients/Federal-Reserve-Seal-logo.png"></div>
+                    <div class="thumb"><img src="images/past-clients/ZebraTechnologies.jpg"></div>
+                    <div class="thumb"><img src="images/past-clients/aha.jpg"></div>
+                    <div class="thumb"><img src="images/past-clients/next-wave-logo.jpg"></div>
+                    <div class="thumb"><img src="images/past-clients/wf.jpg"></div>
+                </div></li>
+        </ul>
+    </div><!-- sp-content -->
+
+</div><!-- sp-slideshow -->
+<div class="container">
+    <p class="well tag-line">Much of my web app gui work can not be showcased because it resides on private client facing servers. I created <span class="secondary">frontendtrends.com</span> to demonstrate some of the technology trends that have fallen into my orbit. You can download this showcase and use the technology stack to boilerplate your next web application. </p>
+</div>
+        <script type="text/javascript">
+
+            var shine = new Shine(document.getElementById('shine'));
+
+            window.addEventListener('mousemove', function(event) {
+                shine.light.position.x = event.clientX;
+                shine.light.position.y = event.clientY;
+                shine.draw();
+            }, false);
+
+        </script>

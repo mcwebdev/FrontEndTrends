@@ -1,0 +1,35 @@
+/* line 9, ../../sass/theme2.sass */
+body {
+  color: #3b75cc;
+}
+
+/* line 13, ../../sass/theme2.sass */
+input.sp-selector-1:checked ~ .sp-content {
+  background-position: 0 0;
+  background-color: rgba(176, 199, 218, 0.4);
+}
+
+/* line 18, ../../sass/theme2.sass */
+input.sp-selector-2:checked ~ .sp-content {
+  background-position: -100px 0;
+  background: url(../images/slider/grid.png) repeat scroll 0 0;
+  background-color: rgba(95, 111, 129, 0.6);
+}
+
+/* line 24, ../../sass/theme2.sass */
+input.sp-selector-3:checked ~ .sp-content {
+  background-position: -200px 0;
+  background-color: rgba(132, 163, 104, 0.6);
+}
+
+/* line 29, ../../sass/theme2.sass */
+input.sp-selector-4:checked ~ .sp-content {
+  background-position: -300px 0;
+  background-color: rgba(224, 177, 120, 0.6);
+}
+
+/* line 34, ../../sass/theme2.sass */
+input.sp-selector-5:checked ~ .sp-content {
+  background-position: -400px 0;
+  background-color: rgba(224, 187, 142, 0.6);
+}

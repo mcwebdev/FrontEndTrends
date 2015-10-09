@@ -1,0 +1,45 @@
+/* line 7, ../../sass/theme1.sass */
+body {
+  color: #222738;
+}
+
+/* line 11, ../../sass/theme1.sass */
+input.sp-selector-1:checked ~ .sp-content {
+  background-position: 0 0;
+  background-color: rgba(46, 0, 91, 0.6);
+}
+
+/* line 16, ../../sass/theme1.sass */
+input.sp-selector-2:checked ~ .sp-content {
+  background-position: -100px 0;
+  background: url(../images/slider/grid.png) repeat scroll 0 0;
+  background-color: rgba(91, 38, 70, 0.6);
+}
+
+/* line 22, ../../sass/theme1.sass */
+input.sp-selector-3:checked ~ .sp-content {
+  background-position: -200px 0;
+  background-color: rgba(245, 91, 0, 0.6);
+}
+
+/* line 27, ../../sass/theme1.sass */
+input.sp-selector-4:checked ~ .sp-content {
+  background-position: -300px 0;
+  background-color: rgba(245, 91, 0, 0.6);
+}
+
+/* line 32, ../../sass/theme1.sass */
+input.sp-selector-5:checked ~ .sp-content {
+  background-position: -400px 0;
+  background-color: rgba(245, 234, 0, 0.6);
+}
+
+/* line 36, ../../sass/theme1.sass */
+#footer {
+  background-color: #707070;
+}
+
+/* line 39, ../../sass/theme1.sass */
+#footer p {
+  color: white;
+}

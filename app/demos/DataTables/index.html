@@ -1,0 +1,144 @@
+<!doctype html>
+<html ng-app="frontendtrendsApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>FrontEndTrends MeanStack</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="/bower_components/data-tables/js/jquery.dataTables.js"></script>
+    <link rel="stylesheet" href="/bower_components/data-tables/css/jquery.dataTables_themeroller.css">
+    <style>
+
+        .dataTables_length select{display: none;}
+    </style>
+</head>
+<body>
+<section id="json-grid">
+
+        <table cellpadding="0" cellspacing="0" border="0" class="dt display" id="json-table">
+            <thead>
+            <tr>
+                <th width="25%">Machine Card</th>
+                <th width="20%">Value</th>
+                <th width="10%">Type</th>
+                <th width="10%">Range</th>
+                <th width="10%">Clone</th>
+                <th width="10%">Archive</th>
+                <th width="10%">Access</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th>Machine Card</th>
+                <th>Value</th>
+                <th>Type</th>
+                <th>Range</th>
+                <th>Clone</th>
+                <th>Archive</th>
+                <th>Access</th>
+            </tr>
+            </tfoot>
+        </table>
+        <br>
+        <!--<div class="highlight">
+<pre class="prettyprint linenums"><code class="html">
+&lt;table cellpadding="0" cellspacing="0" border="0" class="display" id="json-table"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th width="20%">Machine Card&lt;/th&gt;
+      &lt;th width="10%">Value&lt;/th&gt;
+      &lt;th width="10%">Type&lt;/th&gt;
+      &lt;th width="15%">Range&lt;/th&gt;
+      &lt;th width="15%">Clone&lt;/th&gt;
+      &lt;th width="15%">Archive&lt;/th&gt;
+      &lt;th width="15%">Access&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;th>Machine Card&lt;/th&gt;
+      &lt;th>Value&lt;/th&gt;
+      &lt;th>Type&lt;/th&gt;
+      &lt;th>Range&lt;/th&gt;
+      &lt;th>Clone&lt;/th&gt;
+      &lt;th>Archive&lt;/th&gt;
+      &lt;th>Access&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+
+$.getJSON('json/redstone.json', function (data) {
+var newJson = [];
+var myJson = data;
+$.each(myJson.allconfig, function (key, value) {
+ var rowArray = [];
+ rowArray.push(key);
+ $.each(myJson.allconfig[key], function (key1, value1) {
+     rowArray.push(value1);
+ });
+ newJson.push(rowArray);
+});
+$('#json-table').dataTable({
+ "bJQueryUI": true,
+ "sPaginationType": "full_numbers",
+ "bProcessing": true,
+ "aaData": newJson
+});
+});</code>
+</pre></div>-->
+
+    </section>
+
+
+<script type="text/javascript">
+    $.getJSON('api/test.json', function (data) {
+        var items = [];
+
+        $.each(data.allconfig, function (key, val) {
+            items.push('<li id="' + key + '">' + ' (<b>key: ' + key + '</b>)(value: ' + val.value + ')(type: ' + val.type + ') (range: ' + val.range + ') (clone: ' + val.clone + ') (archive: ' + val.archive + ') (access: ' + val.access + ')</li>');
+        });
+
+        $('<ol/>', {
+            'class': 'raw-list',
+            html: items.join('')
+        }).appendTo('.json');
+    });
+
+
+
+    $.getJSON('api/test.json', function (data) {
+        var newJson = [];
+        var myJson = data;
+        $.each(myJson.allconfig, function (key, value) {
+            var rowArray = [];
+            rowArray.push(key);
+            $.each(myJson.allconfig[key], function (key1, value1) {
+                rowArray.push(value1);
+            });
+            newJson.push(rowArray);
+        });
+        $('#json-table').dataTable({
+            "bJQueryUI": true,
+            "bStateSave": true,
+            "sPaginationType": "full_numbers",
+            "bProcessing": true,
+            "oLanguage": {
+                "sLengthMenu": ' <select>' + '<option value="5" selected="selected">Filter</option>' + '<option value="5">5</option>' + '<option value="10">10</option>' + '<option value="20">20</option>' + '<option value="30">30</option>' + '<option value="50">50</option>' + '<option value="-1">All</option>' + '</select>'
+            },
+            "aaData": newJson
+        });
+        $("#json-table").on("click", "tbody tr", function () {
+            $(this).toggleClass('row_selected');
+        });
+    });
+
+
+</script>
+</body>
+</html>
